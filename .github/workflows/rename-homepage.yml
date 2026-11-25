@@ -1,0 +1,21 @@
+name: Rename repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rename
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl -sS -f -X PATCH \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}" \
+            -d '{"name":"LJT-Homepage"}'
