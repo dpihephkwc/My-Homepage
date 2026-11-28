@@ -2,9 +2,6 @@
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
 
 # Basic Site Settings
 locale                   : "en-US"
@@ -15,7 +12,7 @@ name                     : &name "Junteng Liu"
 description              : &description "Junteng Liu's personal homepage — PhD candidate (Ph.D. in Computer Science, HKUST) at the HKUST NLP Group"
 url                      : https://dpihephkwc.github.io
 baseurl                  : "/LJT-Homepage"
-repository               : "Dpihephkwc/LJT-Homepage"
+repository               : "dpihephkwc/LJT-Homepage"
 
 # Site Author
 author:
@@ -226,7 +223,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true    
+    output: true
     permalink: /:collection/:path/
 
 
